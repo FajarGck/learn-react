@@ -1,14 +1,15 @@
 import React from 'react'
+import './style/style.css'
 
-function Product(props) {
+function Product({ name, price, location}) {
   return (
-    <div>
-        <img src="https://placeholder.com/100" alt="dummy" />
-        <h4>{props.name}</h4>
-        <h3>${props.price}</h3>
-        <h5>{props.location}</h5>
+    <div className='card-product'>
+        <img src="src/assets/dummy.jpg" alt="dummy" />
+        <h4>{name}</h4>
+        <h3>${price}</h3>
+        <h5>{location}</h5>
     </div>
   )
 }
 
-export default Product
+export default Product;

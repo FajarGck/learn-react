@@ -4,11 +4,7 @@ import Form from './Form'
 import './style/style.css'
 
 function ListProducts() {
-    const [ products, setProducts ] = useState([
-        { name: "Cocacola", price: 10, location: "Bali"},
-        { name: "Pepsi", price: 10, location: "Batam"},
-        { name: "Fanta", price: 10, location: "Surabaya"},
-    ])
+    const [ products, setProducts ] = useState([])
 
 
     const addProduct = (newProduct) => {
@@ -16,11 +12,14 @@ function ListProducts() {
     }
     
   return (
-    <div className='list-product'> 
+    <React.Fragment> 
     <Form addProduct={addProduct}/>
+    <div className="wrapper">
+    <h2>List Product</h2>
         {
-            products.map((product) => (
-                <div className="card-product" key={product.name}>
+            products.map((product, index) => (
+                <div className='list-product' 
+                key={index}>
                 <Product 
                 name={product.name}
                 price={product.price}
@@ -30,6 +29,7 @@ function ListProducts() {
             ))
         }
     </div>
+    </React.Fragment>
   )
 }
 

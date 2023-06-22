@@ -65,4 +65,4 @@ function Form( { addProduct }) {
   )
 }
 
-export default Form
+export default Form;
