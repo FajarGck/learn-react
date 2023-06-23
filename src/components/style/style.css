@@ -1,11 +1,20 @@
   Form {
+    border: 1px solid red;
     display: flex;
+    place-items: start;
     flex-direction: column;
-    max-width: 200px;
     margin: 20px;
+    padding: 10px 0;
+  }
+
+  .input {
+    max-width: min-content;
+    padding-left: 2rem;
   }
 
   .btn {
+    padding-left: 2rem;
+    padding-top: 2px;
     flex-direction: row;
   }
 
@@ -28,6 +37,7 @@
   .list-product {
     display: inline-block;
     margin: 15px;
+    height: 100%;
   }
 
   .card-product {
@@ -40,9 +50,7 @@
   }
 
   .card-product img {
-    width: 100%;
-      max-height: 200px;
-      object-fit: cover;
+      width: 100%;
       border-radius: 5px;
   }
 

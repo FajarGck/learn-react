@@ -33,6 +33,8 @@ function Form( { addProduct }) {
 
   return (
     <form onSubmit={handlerSubmit}>
+        <h2>form to add your product 😉😉</h2>
+        <div className="input">
         <label>Name:
             <input 
             type="text"
@@ -57,6 +59,7 @@ function Form( { addProduct }) {
             onChange={handlerChange}
             />
         </label>
+        </div>
         <div className="btn">
         <button id='submit' type='submit'>Submit</button>
         <button id='reset' type='reset' onClick={handlerReset}>Reset</button>

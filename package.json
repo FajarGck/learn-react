@@ -1,4 +1,5 @@
 {
+  "homepage": "https://FajarGck.github.io/learn-react",
   "name": "package.json",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,8 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "fix": "eslint --fix",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
